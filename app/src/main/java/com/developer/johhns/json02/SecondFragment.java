@@ -18,7 +18,7 @@ import com.google.gson.reflect.TypeToken;
 
 import java.lang.reflect.Type;
 import java.util.ArrayList;
-import java.util.List;
+
 
 public class SecondFragment extends Fragment {
 
@@ -27,9 +27,7 @@ public class SecondFragment extends Fragment {
     String  jsonString = MainActivity.jsonString ;
     private Gson gson = new Gson() ;
     private Type tipo = new TypeToken<ArrayList<Contrato>>() {}.getType() ;
-
-
-    //private RecyclerView recyclerView ;
+    private RecyclerView recyclerView ;
 
     @Override
     public View onCreateView(  LayoutInflater inflater, ViewGroup container,
@@ -45,29 +43,21 @@ public class SecondFragment extends Fragment {
 
         int cantidad = 0 ;//mContratos.size() ;
 
-        for ( int n = cantidad ;  n < cantidad + 5 ; n++ ){
+        for ( int n = cantidad ;  n < (cantidad + 5) ; n++ ){
             Contrato cnt = new Contrato() ;
             int numero = n + 1 ;
             cnt.setNumero( numero ) ;
             cnt.setNombre( "Contrato " + numero ) ;
             cnt.setArea( numero * 10 ) ;
-            cnt.setTonelasdas( numero * 10 * 80 ); ;
+            cnt.setToneladas( numero * 10 * 80 ); ;
             mContratos.add( cnt ) ;
         }
 
         Snackbar.make(view,"Cantidad = " + mContratos.size(),Snackbar.LENGTH_LONG).show();
 
-        binding.revView.setAdapter( new Adaptador( mContratos ) );
+        recyclerView = view.findViewById(R.id.revView) ;
+        recyclerView.setAdapter( new Adaptador( mContratos , getContext() ) );
 
-/*
-        binding.buttonSecond.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                NavHostFragment.findNavController(SecondFragment.this)
-                        .navigate(R.id.action_SecondFragment_to_FirstFragment);
-            }
-        });
-        */
     }
 
     @Override

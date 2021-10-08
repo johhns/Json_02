@@ -64,7 +64,7 @@ public class FirstFragment extends Fragment {
                     cnt.setNumero( numero ) ;
                     cnt.setNombre( "Contrato " + numero ) ;
                     cnt.setArea( numero * 10 ) ;
-                    cnt.setTonelasdas( numero * 10 * 80 ); ;
+                    cnt.setToneladas( numero * 10 * 80 ); ;
                     MainActivity.contratos.add( cnt ) ;
                 }
                 convertirJSON();

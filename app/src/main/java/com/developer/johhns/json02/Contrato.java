@@ -5,16 +5,16 @@ public class Contrato {
     private int     numero ;
     private String  nombre ;
     private int     area   ;
-    private int     tonelasdas ;
+    private int     toneladas ;
 
     public Contrato() {
     }
 
-    public Contrato(int numero, String nombre, int area, int tonelasdas) {
+    public Contrato(int numero, String nombre, int area, int toneladas) {
         this.numero     = numero;
         this.nombre     = nombre;
         this.area       = area;
-        this.tonelasdas = tonelasdas;
+        this.toneladas  = toneladas;
     }
 
     public int getNumero() {
@@ -41,11 +41,11 @@ public class Contrato {
         this.area = area;
     }
 
-    public int getTonelasdas() {
-        return tonelasdas;
+    public int getToneladas() {
+        return toneladas;
     }
 
-    public void setTonelasdas(int tonelasdas) {
-        this.tonelasdas = tonelasdas;
+    public void setToneladas(int tonelasdas) {
+        this.toneladas = tonelasdas;
     }
 }
