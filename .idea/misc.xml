@@ -7,13 +7,14 @@
         <entry key="..\:/Users/Juan/AndroidStudioProjects/Json02/app/src/main/res/layout/card_contrato.xml" value="0.30925925925925923" />
         <entry key="..\:/Users/Juan/AndroidStudioProjects/Json02/app/src/main/res/layout/fragment_first.xml" value="0.30925925925925923" />
         <entry key="..\:/Users/Juan/AndroidStudioProjects/Json02/app/src/main/res/layout/fragment_second.xml" value="0.3546875" />
+        <entry key="..\:/Users/johhn/AndroidStudioProjects/Json_02/app/src/main/res/layout/activity_convertir_gson_array.xml" value="0.24074074074074073" />
         <entry key="..\:/Users/johhn/AndroidStudioProjects/Json_02/app/src/main/res/layout/card_contrato.xml" value="0.24074074074074073" />
         <entry key="..\:/Users/johhn/AndroidStudioProjects/Json_02/app/src/main/res/layout/fragment_first.xml" value="0.24074074074074073" />
         <entry key="..\:/Users/johhn/AndroidStudioProjects/Json_02/app/src/main/res/layout/fragment_second.xml" value="0.24074074074074073" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="11" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

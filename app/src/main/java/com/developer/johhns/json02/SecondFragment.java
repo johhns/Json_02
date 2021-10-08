@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.developer.johhns.json02.databinding.FragmentSecondBinding;
@@ -39,24 +40,11 @@ public class SecondFragment extends Fragment {
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        //contratos = gson.fromJson( jsonString , tipo ) ;
-
-        int cantidad = 0 ;//mContratos.size() ;
-
-        for ( int n = cantidad ;  n < (cantidad + 5) ; n++ ){
-            Contrato cnt = new Contrato() ;
-            int numero = n + 1 ;
-            cnt.setNumero( numero ) ;
-            cnt.setNombre( "Contrato " + numero ) ;
-            cnt.setArea( numero * 10 ) ;
-            cnt.setToneladas( numero * 10 * 80 ); ;
-            mContratos.add( cnt ) ;
-        }
-
-        Snackbar.make(view,"Cantidad = " + mContratos.size(),Snackbar.LENGTH_LONG).show();
+        mContratos = gson.fromJson( jsonString , tipo ) ;
 
         recyclerView = view.findViewById(R.id.revView) ;
         recyclerView.setAdapter( new Adaptador( mContratos , getContext() ) );
+        recyclerView.setLayoutManager( new LinearLayoutManager(getContext()));
 
     }
 

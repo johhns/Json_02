@@ -32,8 +32,8 @@ public class Adaptador extends RecyclerView.Adapter<Adaptador.ViewHolder> {
         Contrato cnt = contratos.get(position) ;
         holder.contrato.setText( String.valueOf( cnt.getNumero() ) );
         holder.nombre.setText( cnt.getNombre() );
-        holder.area.setText( String.valueOf( cnt.getArea() ) );
-        holder.toneladas.setText( String.valueOf( cnt.getToneladas() ) );
+        holder.area.setText( "Area : " + String.valueOf( cnt.getArea() ) );
+        holder.toneladas.setText( "Tons :" + String.valueOf( cnt.getToneladas() ) );
     }
 
     @Override

@@ -10,6 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Json02">
         <activity
+            android:name=".ConvertirGsonArray"
+            android:parentActivityName=".MainActivity"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name"

@@ -4,11 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@color/purple_200">
+    >
 
     <TextView
         android:id="@+id/txtContrato"
-        android:layout_width="wrap_content"
+        android:layout_width="120dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
@@ -45,17 +45,10 @@
         android:id="@+id/txtToneladas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="32dp"
         android:text="Toneladas contratadas"
         app:layout_constraintBottom_toBottomOf="@+id/txtContrato"
         app:layout_constraintStart_toEndOf="@+id/txtArea" />
 
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:text="TX"
-        app:layout_constraintBottom_toBottomOf="@+id/txtArea"
-        app:layout_constraintStart_toEndOf="@+id/txtToneladas" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
